@@ -6,14 +6,17 @@
     <title>Welcom</title>
 </head>
 <body>
-    <h1>Welcome to my page</h1>
-    <p>this is the demo demo application for the course <em>
-        gettin started with flask
-    </em>
-     on <a href="top.ge">Plurasing</a>
-    </p>
-    <img src="/static/2304.i305.002.F.m005.c9.realistic laboratory composition.jpg" width="200"/>
-    <p>{{messages}}</p>
-   
+    <h1>Flash Cards</h1>
+    <ul>
+        {% for card in cards %} 
+        <li>
+            <a href="{{url_for('flash_card',index=card.index)}}">
+                {{card.question}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+        
 </body>
 </html>

@@ -1,17 +1,21 @@
 [
     {
+        "index":0,
         "question":"hello(formal)",
         "answer":"გამარჯობა"
     },
     {
+        "index":1,
         "question":"goodbye(formal)",
         "answer":"ნახვამდის"
     },
      {
+        "index":2,
         "question":"hello(informal)",
         "answer":"ბარო"
     }, 
     {
+        "index":3,
         "question":"goodbye(informal)",
         "answer":"კარგად"
     }

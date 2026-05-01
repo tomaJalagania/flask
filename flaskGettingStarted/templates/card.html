@@ -11,10 +11,18 @@
         Question: {{card.question}}<br>
         Answer: {{card.answer}}
     </p>
+     {% if index < max_lengt %}
      <button>
         <a href="{{url_for('flash_card',index = index + 1)}}">
             Next Card
         </a>
     </button>
+    {% else %}
+     <button>
+        <a href="{{url_for('flash_card',index = 0)}}">
+            Start Over
+        </a>
+    </button>
+    {% endif%}
 </body>
 </html>
