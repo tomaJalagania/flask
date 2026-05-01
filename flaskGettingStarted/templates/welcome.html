@@ -10,7 +10,7 @@
     <ul>
         {% for card in cards %} 
         <li>
-            <a href="{{url_for('flash_card',index=card.index)}}">
+            <a href="{{url_for('flash_card',index=loop.index0)}}">
                 {{card.question}}
             </a>
         </li>
