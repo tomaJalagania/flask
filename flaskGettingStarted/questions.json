@@ -1,0 +1,18 @@
+[
+    {
+        "question":"hello(formal)",
+        "answer":"გამარჯობა"
+    },
+    {
+        "question":"goodbye(formal)",
+        "answer":"ნახვამდის"
+    },
+     {
+        "question":"hello(informal)",
+        "answer":"ბარო"
+    }, 
+    {
+        "question":"goodbye(informal)",
+        "answer":"კარგად"
+    }
+]
