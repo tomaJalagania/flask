@@ -1,4 +1,4 @@
-from  flask import Flask, render_template
+from  flask import Flask, render_template,abort
 from datetime import datetime
 from model import db
 app = Flask(__name__)
@@ -11,8 +11,14 @@ def welcome():
                            messages = "this is message"
                            )
 
-@app.route("/card")
-def flash_card():
-    return render_template("card.html",
-                           card = db[0]
-                           )
+@app.route("/card/<int:index>")
+def flash_card(index):
+    
+    try:
+        card = db[index]
+        return render_template("card.html",
+                           card = card,
+                           index = index )
+    except IndexError:
+        abort(404)
+    
