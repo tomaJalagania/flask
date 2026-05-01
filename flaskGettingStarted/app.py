@@ -5,5 +5,7 @@ app = Flask(__name__)
 # create main router
 @app.route("/")
 def welcome():
-    return render_template("welcome.html")
+    return render_template("welcome.html",
+                           messages = "this is message"
+                           )
 
